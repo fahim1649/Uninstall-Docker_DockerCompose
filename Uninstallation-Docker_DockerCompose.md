@@ -21,5 +21,14 @@ echo "Removing Docker repository configuration..."
 sudo rm /etc/apt/sources.list.d/docker.list
 sudo rm /etc/apt/keyrings/docker.asc
 
-echo "Docker uninstallation complete."
+echo "Docker Uninstallation Complete."
+
+# To remove the Docker Compose CLI plugin, run
+sudo apt-get remove docker-compose-plugin
+
+# If you used curl to install Docker Compose CLI plugin, to uninstall it, run,
+sudo rm $DOCKER_CONFIG/cli-plugins/docker-compose
+sudo rm /usr/local/lib/docker/cli-plugins/docker-compose
+
+echo "Docker-Compose Uninstallation Complete."
 ```
