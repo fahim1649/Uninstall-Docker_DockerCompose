@@ -1,1 +1,0 @@
-# Uninstallation-Docker_DockerCompose
